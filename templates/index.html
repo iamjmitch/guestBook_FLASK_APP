@@ -23,12 +23,12 @@ Guest Book
       >Sign the Guest Book</a
     >
   </div>
-  {% for comment in comments %}
+  {% for comment in guestbook %}
   <div class="page-header">
     <h1>{{ comment.name}}</h1>
   </div>
   <div class="well">
-    <p>{{comment.comment_text}}</p>
+    <p>{{comment.comment}}</p>
   </div>
   {% endfor %}
 </div>
